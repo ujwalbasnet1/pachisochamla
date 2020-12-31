@@ -2,13 +2,13 @@
    "type": "mysql",
    "host": "localhost",
    "port": 3306,
-   "username": "root",
-   "password": "",
-   "database": "test",
+   "username": "pachisochamla",
+   "password": "pachisochamla",
+   "database": "pachisochamla",
    "synchronize": true,
    "logging": false,
    "entities": [
-      "src/entity/**/*.ts"
+      "src/modules/features/**/entity/*.ts"
    ],
    "migrations": [
       "src/migration/**/*.ts"
@@ -17,7 +17,7 @@
       "src/subscriber/**/*.ts"
    ],
    "cli": {
-      "entitiesDir": "src/entity",
+      "entitiesDir": "src/modules/features/**/entity/*.ts",
       "migrationsDir": "src/migration",
       "subscribersDir": "src/subscriber"
    }
